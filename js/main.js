@@ -33,3 +33,17 @@ const swiper = new Swiper('.companiesSwiper', {
     touchReleaseOnEdges: true,
     resistanceRatio: 0.5
   });
+
+  Fancybox.bind("[data-fancybox]", {
+
+    Thumbs: {
+      autoStart: true,
+    },
+    Toolbar: {
+      display: {
+        left: [],
+        middle: [],
+        right: ["close"],
+      },
+    },
+  });
