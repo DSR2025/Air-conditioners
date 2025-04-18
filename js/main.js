@@ -20,10 +20,11 @@ const swiper = new Swiper('.companiesSwiper', {
       },
       768: {
         slidesPerView: 4,
-        spaceBetween: 30
+        spaceBetween: 20
       },
+
       1024: {
-        slidesPerView: 6,
+        slidesPerView: 5,
         spaceBetween: 20
       }
     },
@@ -104,3 +105,34 @@ const swiper = new Swiper('.companiesSwiper', {
       console.error('Ошибка:', error);
     });
   });
+
+  const burgerMenu = document.getElementById('burgerMenu');
+  const sidebar = document.getElementById('sidebar');
+  const burgerClose = document.querySelector('.burger_close');
+  const overlay = document.getElementById('overlay');
+  
+  function toggleMenu() {
+      burgerMenu.classList.toggle('active');
+      sidebar.classList.toggle('active');
+      overlay.classList.toggle('active');
+  }
+  
+  burgerMenu.addEventListener('click', toggleMenu);
+  
+  burgerClose.addEventListener('click', (e) => {
+      e.preventDefault();
+      burgerMenu.classList.remove('active');
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+  });
+  
+  
+  document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burgerMenu.contains(e.target) && overlay.classList.contains('active')) {
+          burgerMenu.classList.remove('active');
+          sidebar.classList.remove('active');
+          overlay.classList.remove('active');
+      }
+  });
+  
+  

@@ -8,17 +8,18 @@
   <title>CПЕЦ РСУ - кондиционеры</title>
   <link rel="stylesheet" href="css/normilize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.min.css">
 </head>
 
 <body>
-
+  <div id="overlay"></div>
   <header class="header">
     <div class="header_container container">
       <div class="header_top">
-        <a class="header_tel_link" href="tel:+79219999999">+79219999999</a>
-        <div class="header_divider">|</div>
+        <a class="header_tel_link" href="tel:+79939221522">+79939221522</a>
+        <div class="header_divider"></div>
         <div class="header_socials_wrapper">
           <a class="social_link" href="https://t.me/Just_Luck01">
             <svg class="telegram" width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -28,7 +29,7 @@
                 fill="#3E3E3E" />
             </svg>
           </a>
-          <a class="social_link" href=""> 
+          <a class="social_link" href="https://wa.me/79939221522">
             <svg class="whatsapp" width="40" height="40" viewBox="0 0 40 40" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -40,7 +41,7 @@
       </div>
     </div>
     <div class="header_bottom">
-      <div class="container">
+      <div class="container header_bottom_container">
         <div class="header_logo_wrapper">
           <a class="logo_link">
             <svg class="header_logo" width="172" height="51" viewBox="0 0 172 51" fill="none"
@@ -99,13 +100,39 @@
               </defs>
             </svg>
           </a>
-          <nav>
+          <nav class="header_navigation">
             <ul class="nav_list list--reset">
               <li class="nav_item"><a class="header_nav_link" href="#catalog">Каталог</a></li>
               <li class="nav_item"><a class="header_nav_link" href="#price">Услуги и цены</a></li>
               <li class="nav_item"><a class="header_nav_link" href="#form">Оставить заявку</a></li>
               <li class="nav_item"><a class="header_nav_link" href="#about">О нас</a></li>
               <li class="nav_item"><a class="header_nav_link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header_burger_wrapper">
+            <div class="burger-menu" id="burgerMenu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+          <nav class="sidebar" id="sidebar">
+            <div class="burger_close_btn_wrapper">
+              <a class="burger_close" href="#">
+                <svg class="cross" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.0404 14L27.7846 1.25582C28.0719 0.968551 28.0719 0.502805 27.7846 0.21554C27.4973 -0.0717242 27.0316 -0.0717242 26.7443 0.21554L14.0001 12.9596L1.25588 0.215448C0.96862 -0.0718161 0.502874 -0.0718161 0.215609 0.215448C-0.0717472 0.502713 -0.0717472 0.968459 0.215609 1.25572L12.9597 14L0.215517 26.7442C-0.0718391 27.0315 -0.0718391 27.4972 0.215517 27.7846C0.359149 27.9282 0.547379 28 0.735701 28C0.924023 28 1.11225 27.9282 1.25588 27.7846L14.0001 15.0404L26.7443 27.7846C26.888 27.9282 27.0761 28 27.2644 28C27.4528 28 27.641 27.9282 27.7846 27.7846C28.0719 27.4972 28.0719 27.0315 27.7846 26.7442L15.0404 14Z"
+                    fill="#FFFFFF" />
+                </svg>
+              </a>
+            </div>
+            <ul class="burger_list list--reset">
+              <li class="burger_item"><a class="header_nav_link" href="#catalog">Каталог</a></li>
+              <li class="burger_item"><a class="header_nav_link" href="#price">Услуги и цены</a></li>
+              <li class="burger_item"><a class="header_nav_link" href="#form">Оставить заявку</a></li>
+              <li class="burger_item"><a class="header_nav_link" href="#about">О нас</a></li>
+              <li class="burger_item"><a class="header_nav_link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -377,10 +404,11 @@
                 <textarea class="comment_inp contacts__inp" id="comment" name="comment"
                   placeholder="Опишите ваш обьект: местоположение, тип здания, площадь помещений, желаемое оборудование и другие опции"></textarea>
               </div>
-            
+
               <div class="contacts_submit">
                 <label class="custom_checkbox">
-                  <input id="checkbox" class="custom_checkbox_input" type="checkbox" name="consent" tabindex="0" required />
+                  <input id="checkbox" class="custom_checkbox_input" type="checkbox" name="consent" tabindex="0"
+                    required />
                   <span class="custom_checkbox_text">
                     Согласие на обработку персональных данных
                   </span>
@@ -455,10 +483,10 @@
         </div>
         <div class="about_certificate">
           <h3 class="about_certificate_title">Наши сертификаты</h3>
-          <ul class="about_certificate_list list--reset">
+          <ul class="about_certificate_list list--reset" id="certificates-list">
             <li class="about_certificate_item">
               <a href="img/Sert1.webp" data-fancybox="gallery" data-caption="Certificate 1">
-                <img class="about_certificate_img" src="img/Sert1.webp" alt="certificate1">
+                <img class="about_certificate_img about_certificate_img_custom" src="img/Sert1.webp" alt="certificate1">
               </a>
             </li>
             <li class="about_certificate_item">
@@ -468,7 +496,7 @@
             </li>
             <li class="about_certificate_item">
               <a href="img/Sert3.webp" data-fancybox="gallery" data-caption="Certificate 3">
-                <img class="about_certificate_img" src="img/Sert3.webp" alt="certificate3">
+                <img class="about_certificate_img about_certificate_img_custom" src="img/Sert3.webp" alt="certificate3">
               </a>
             </li>
             <li class="about_certificate_item">
@@ -478,7 +506,7 @@
             </li>
             <li class="about_certificate_item">
               <a href="img/Sert5.webp" data-fancybox="gallery" data-caption="Certificate 5">
-                <img class="about_certificate_img" src="img/Sert5.webp" alt="certificate5">
+                <img class="about_certificate_img about_certificate_img_custom" src="img/Sert5.webp" alt="certificate5">
               </a>
             </li>
           </ul>
@@ -594,37 +622,41 @@
             </ul>
           </nav>
         </div>
-        <div class="footer_third">
-          <h3 class="footer_title">Адрес</h3>
-          <p class="footer_descr">Москва, Таллинская ул., 17к2с2</p>
-          <p class="footer_descr"><span class="footer_descr_custom">График работы:</span> пн- вс, 09:00‑23:30</p>
-        </div>
-        <div class="footer_fourth">
-          <h3 class="footer_title">Связаться с нами</h3>
-          <a class="footer_link" href="mailto:spets.rsu@mail.ru"><span class="footer_descr_custom">Почта:</span>
-            spets.rsu@mail.ru</a>
-          <a class="footer_link" href="tel:+79999999999"><span class="footer_descr_custom">Телефон:</span>
-            +7987777777</a>
-          <div class="header_socials_wrapper">
-            <span class="footer_descr_custom">Мессенджеры:</span>
-            <a class="social_link" href="https://t.me/Just_Luck01">
-              <svg class="telegram" width="40" height="40" viewBox="0 0 40 40" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.8233 13.7017L26.54 29.1683C26.2983 30.265 25.645 30.5317 24.7333 30.015L19.7333 26.3317L17.3233 28.655C17.09 28.955 16.7283 29.1467 16.3233 29.1467C16.32 29.1467 16.3183 29.1467 16.315 29.1467L16.67 24.0567L25.9367 15.6867C26.3367 15.3317 25.8467 15.13 25.315 15.485L13.8667 22.695L8.93333 21.155C7.86667 20.8167 7.83667 20.0883 9.15833 19.565L28.435 12.135C29.3317 11.8083 30.1117 12.3483 29.8217 13.7033L29.8233 13.7017Z"
-                  fill="#FFFFFF" />
-              </svg>
-            </a>
-            <a class="social_link" href=""> 
-              <svg class="whatsapp" width="40" height="40" viewBox="0 0 40 40" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M20.005 0H19.995C8.96752 0 2.62423e-05 8.96999 2.62423e-05 20C-0.0068215 24.2125 1.32665 28.318 3.80752 31.7225L1.31503 39.1525L9.00252 36.695C12.2634 38.8584 16.0917 40.0083 20.005 40C31.0325 40 40 31.0275 40 20C40 8.97249 31.0325 0 20.005 0ZM31.6425 28.2425C31.16 29.605 29.245 30.735 27.7175 31.065C26.6725 31.2875 25.3075 31.465 20.7125 29.56C14.835 27.125 11.05 21.1525 10.755 20.765C10.4725 20.3775 8.38002 17.6025 8.38002 14.7325C8.38002 11.8625 9.83752 10.465 10.425 9.86499C10.9075 9.37249 11.705 9.14749 12.47 9.14749C12.7175 9.14749 12.94 9.15999 13.14 9.16999C13.7275 9.19499 14.0225 9.22999 14.41 10.1575C14.8925 11.32 16.0675 14.19 16.2075 14.485C16.35 14.78 16.4925 15.18 16.2925 15.5675C16.105 15.9675 15.94 16.145 15.645 16.485C15.35 16.825 15.07 17.085 14.775 17.45C14.505 17.7675 14.2 18.1075 14.54 18.695C14.88 19.27 16.055 21.1875 17.785 22.7275C20.0175 24.715 21.8275 25.35 22.475 25.62C22.9575 25.82 23.5325 25.7725 23.885 25.3975C24.3325 24.915 24.885 24.115 25.4475 23.3275C25.8475 22.7625 26.3525 22.6925 26.8825 22.8925C27.4225 23.08 30.28 24.4925 30.8675 24.785C31.455 25.08 31.8425 25.22 31.985 25.4675C32.125 25.715 32.125 26.8775 31.6425 28.2425Z"
-                  fill="#FFFFFF" />
-              </svg>
-            </a>
+        <div class="footer_third_block">
+          <div class="footer_third">
+            <h3 class="footer_title">Адрес</h3>
+            <p class="footer_descr">Волоколамское ш., 3, Красногорск, Московская обл., 143402</p>
+            <p class="footer_descr"><span class="footer_descr_custom">График работы:</span> пн- вс, 09:00‑21:00</p>
           </div>
+          <div class="footer_fourth">
+            <h3 class="footer_title">Связаться с нами</h3>
+            <a class="footer_link" href="mailto:spets.rsu@mail.ru"><span class="footer_descr_custom">Почта:</span>
+              spets.rsu@mail.ru</a>
+            <a class="footer_link" href="tel:+79939221522"><span class="footer_descr_custom">Телефон:</span>
+              +79939221522</a>
+            <div class="header_socials_wrapper">
+              <span class="footer_descr_custom">Мессенджеры:</span>
+              <a class="social_link" href="https://t.me/Just_Luck01">
+                <svg class="telegram" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.8233 13.7017L26.54 29.1683C26.2983 30.265 25.645 30.5317 24.7333 30.015L19.7333 26.3317L17.3233 28.655C17.09 28.955 16.7283 29.1467 16.3233 29.1467C16.32 29.1467 16.3183 29.1467 16.315 29.1467L16.67 24.0567L25.9367 15.6867C26.3367 15.3317 25.8467 15.13 25.315 15.485L13.8667 22.695L8.93333 21.155C7.86667 20.8167 7.83667 20.0883 9.15833 19.565L28.435 12.135C29.3317 11.8083 30.1117 12.3483 29.8217 13.7033L29.8233 13.7017Z"
+                    fill="#FFFFFF" />
+                </svg>
+              </a>
+              <a class="social_link" href="https://wa.me/79939221522">
+                <svg class="whatsapp" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.005 0H19.995C8.96752 0 2.62423e-05 8.96999 2.62423e-05 20C-0.0068215 24.2125 1.32665 28.318 3.80752 31.7225L1.31503 39.1525L9.00252 36.695C12.2634 38.8584 16.0917 40.0083 20.005 40C31.0325 40 40 31.0275 40 20C40 8.97249 31.0325 0 20.005 0ZM31.6425 28.2425C31.16 29.605 29.245 30.735 27.7175 31.065C26.6725 31.2875 25.3075 31.465 20.7125 29.56C14.835 27.125 11.05 21.1525 10.755 20.765C10.4725 20.3775 8.38002 17.6025 8.38002 14.7325C8.38002 11.8625 9.83752 10.465 10.425 9.86499C10.9075 9.37249 11.705 9.14749 12.47 9.14749C12.7175 9.14749 12.94 9.15999 13.14 9.16999C13.7275 9.19499 14.0225 9.22999 14.41 10.1575C14.8925 11.32 16.0675 14.19 16.2075 14.485C16.35 14.78 16.4925 15.18 16.2925 15.5675C16.105 15.9675 15.94 16.145 15.645 16.485C15.35 16.825 15.07 17.085 14.775 17.45C14.505 17.7675 14.2 18.1075 14.54 18.695C14.88 19.27 16.055 21.1875 17.785 22.7275C20.0175 24.715 21.8275 25.35 22.475 25.62C22.9575 25.82 23.5325 25.7725 23.885 25.3975C24.3325 24.915 24.885 24.115 25.4475 23.3275C25.8475 22.7625 26.3525 22.6925 26.8825 22.8925C27.4225 23.08 30.28 24.4925 30.8675 24.785C31.455 25.08 31.8425 25.22 31.985 25.4675C32.125 25.715 32.125 26.8775 31.6425 28.2425Z"
+                    fill="#FFFFFF" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </div>
   </footer>

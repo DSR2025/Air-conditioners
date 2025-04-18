@@ -314,6 +314,14 @@ body {
 	color: #5E95AF;
 }
 
+.burger_close:hover .cross path {
+	fill: #5E95AF;
+  }
+
+  .burger-menu:hover .bar {
+	background: #5E95AF; /* Красный цвет при наведении */
+	transition: all 0.3s ease; /* Плавное изменение цвета */
+  }
 
 
 /* header */
@@ -350,6 +358,21 @@ body {
 .telegram path, .whatsapp path{
   transition: .3s ease-in-out;
 }
+
+
+
+/* ******************************** */
+.sidebar{
+	display: none;
+}
+
+.header_burger_wrapper{
+	display: none;
+}
+
+
+
+/* ******************************** */
 
 .header_bottom{
   background-color: #3E3E3E;
@@ -722,7 +745,7 @@ body {
   }
   
   .custom_checkbox_text {
-	margin-top: 12px;
+	margin-top: 2px;
 	margin-bottom: 10px;
 	position: relative;
 	display: flex;
@@ -742,8 +765,8 @@ body {
 	right: 347px;
 	top: 30%;
 	transform: translateY(-38%);
-	width: 24px;
-	height: 24px;
+	width: 18px;
+	height: 18px;
 	border: 1px solid #FFFFFF;
   }
   
@@ -752,8 +775,8 @@ body {
 	position: absolute;
 	right: 350px;
 	top: 43%;
-	width: 17px;
-	height: 20px;
+	width: 12px;
+	height: 15px;
 	background-image: url("../img/Vector.png");
 	background-position: center;
 	background-size: 100%;
@@ -880,6 +903,7 @@ body {
 .about_list{
 	display: flex;
 	margin-bottom: 32px;
+	border-bottom: 1px solid #FFFFFF;
 }
 
 .about_item{
@@ -914,7 +938,7 @@ body {
 .about_info_wrapper{
 	display: flex;
 	gap: 19px;
-	margin-bottom: 72px;
+	margin-bottom: 56px;
 }
 
 .about_info_left{
@@ -966,10 +990,14 @@ body {
   }
 
   .about_certificate{
-	padding: 56px 0 72px 0;
+	padding: 56px 0 56px 0;
 	border-bottom: 1px solid #3E3E3E;
 	border-top: 1px solid #3E3E3E;
 	margin-bottom: 56px;
+  }
+
+  .swiper-wrapper_custom{
+	align-items: center;
   }
 
   .about_certificate_title{
@@ -1041,6 +1069,7 @@ body {
 
   .footer_descr{
 	margin: 0;
+	max-width: 316px;
 	color: #FFFFFF;
 	font-family: "Montserrat";
 	font-size: 20px;
@@ -1125,4 +1154,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+  }
+
+  .footer_third_block{
+	display: flex;
   }
