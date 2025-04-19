@@ -348,6 +348,10 @@
         display: none;
     }
 
+    .about {
+        padding-bottom: 128px;
+    }
+
 
     /* burger */
     .sidebar {
@@ -407,5 +411,533 @@
         gap: 32px;
     }
 
+    .name_title_custom {
+        padding-top: 56px;
 
+    }
+
+    .prices {
+        margin-bottom: 128px;
+    }
+
+    .footer_logo{
+        width: 230px;
+        height: 67px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 430px;
+    }
+
+    .header_logo{
+        width: 127px;
+        height: 37px;
+    }
+
+    .header_bottom {
+        background-color: #3E3E3E;
+        padding: 15px 0;
+    }
+
+    .header_socials_wrapper {
+        gap: 10px;
+    }
+
+    .header_tel_link {
+        font-size: 16px;
+    }
+
+    .telegram, .whatsapp{
+        width: 32px;
+        height: 32px;
+    }
+
+    .header {
+        margin-bottom: 8px;
+    }
+
+    .hero_title {
+        font-size: 46px;
+        margin-bottom: 0;
+    }
+
+    .hero_subtitle {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .hero_info_left {
+        padding: 0;
+        background-color: #3E3E3E;
+
+    }
+
+    .hero_info_content {
+        background-image: none;
+        flex-direction: column-reverse;
+        padding: 48px 0;
+    }
+
+    .hero_info_middle {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    .hero_info_img_middle {
+        max-width: 410px;
+    }
+
+    .hero_info_item {
+        padding: 16px 0;
+        font-size: 16px;
+    }
+
+    .hero_info_list {
+        margin-bottom: 24px;
+    }
+
+    .default_button {
+        padding: 14px 81px;
+        font-size: 16px;
+    }
+
+    .section_title {
+        max-width: 280px;
+    }
+
+    .name_title {
+        margin-bottom: 48px;
+    }
+
+    .categories_cards_wrapper {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .categories_card {
+        max-width: 100%;
+        height: 549px;
+    }
+
+    .categories_name_link {
+        font-size: 16px;
+    }
+
+    .categories_name {
+        display: flex;
+        justify-content: center;
+        padding: 14px 18px;
+    }
+
+    .categories_cards_btn_link {
+        font-size: 16px;
+    }
+
+    .categories_arrow{
+        width: 183px;
+    }
+
+    .name_title_custom{
+        margin-bottom: 0;
+    }
+
+    .name_title_custom {
+        padding-top: 48px;
+
+    }
+
+    
+
+.companies_image {
+    max-width: 130px;
+    max-height: 63px;
+}
+
+
+.title_prices_custom {
+    margin: 0;
+}
+
+.prices_content {
+    flex-direction: column;
+}
+
+.prices_card {
+    max-width: 100%;
+    padding: 16px 0;
+}
+
+.prices_card_custom {
+    border-right: none;
+}
+.prices_card_name {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.prices_card_descr {
+    font-size: 16px;
+}
+
+.prices {
+    margin-top: 48px;
+}
+
+.prices_card_descr_custom, .prices_download_link {
+    max-width: 100%;
+    font-size: 16px;
+}
+
+.prices_card_custom2 {
+    padding-left: 10px;
+    gap: 16px;
+}
+
+.prices_card:nth-child(1) { order: 1; } /* Диагностика */
+.prices_card:nth-child(2) { order: 2; } /* Монтаж */
+.prices_card:nth-child(3) { order: 3; } /* Сервисное обслуживание */
+.prices_card:nth-child(4) { order: 4; } /* Заправка фреоном */
+.prices_card:nth-child(5) { order: 6; } /* Карточка без h3 (перемещаем в конец) */
+.prices_card:nth-child(6) { order: 5; } /* Ремонт */
+
+.form_content {
+    padding: 48px 0 ;
+}
+
+.form_descr {
+    margin-bottom: 24px;
+    font-size: 16px;
+
+}
+.form_title {
+    margin-bottom: 24px;
+}
+
+.contacts__inp {
+    background-color: #3E3E3E;
+    padding: 14px 10px;
+    outline: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.form_field {
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.custom_checkbox_text {
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.custom_checkbox_text::before {
+    right: 300px;
+}
+
+.custom_checkbox_text::after {
+    right: 303px;
+}
+
+.about_title {
+    font-size: 20px;
+}
+
+.about_descr {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.about_item_name {
+    font-size: 20px;
+}
+
+.about_item_descr {
+    font-size: 16px;
+    max-width: 258px;
+}
+
+.about_info_wrapper {
+    padding: 48px 10px;
+}
+
+.about_info_item {
+    font-size: 16px;
+}
+
+.about_info_item_custom {
+    font-size: 16px;
+}
+
+.about_info_list li::before {
+    top: 4px;
+}
+
+.about_certificate {
+    padding: 48px 0 ;
+    margin-bottom: 48px;
+}
+
+
+/* **************************** */
+
+#certificates-list {
+    display: grid;
+    grid-template-columns: 223px 177px;
+    /* Фиксированные ширины */
+    grid-template-rows: 81px 81px 81px 81px;
+    /* 4 строки по 144px (половина от 288px) */
+    justify-content: center;
+    align-items: start;
+}
+
+.about_certificate_item:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 162px;
+}
+
+.about_certificate_item:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3 / span 2;
+    height: 162px;
+}
+
+.about_certificate_item:nth-child(5) {
+    grid-column: 1;
+    grid-row: 5 / span 2;
+    height: 162px;
+}
+
+
+.about_certificate_item:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    height: 247px;
+}
+
+.about_certificate_item:nth-child(4) {
+    grid-column: 2;
+    grid-row: 4 / span 3;
+    height: 247px;
+}
+
+
+
+.about_certificate_img {
+    height: 247px;
+}
+
+.about_certificate_img_custom {
+    height: 162px;
+    
+}
+
+.about_certificate_list {
+    row-gap: 4px;
+    column-gap: 10px;
+}
+
+.about_certificate_title {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.about_clients_item {
+    font-size: 16px;
+}
+
+.about_clients_wrapper {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about_clients_list {
+    gap: 8px;
+}
+
+.footer_logo{
+    width: 170px;
+    height: 50px;
+}
+
+.footer {
+    padding: 48px 0 ;
+}
+
+.footer_first {
+    margin-bottom: 48px;
+}
+
+.header_nav_link {
+    font-size: 16px;
+}
+
+.footer_list {
+    margin-bottom: 48px;
+}
+
+.footer_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer_descr {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.footer_descr_custom {
+    font-size: 16px;
+}
+.footer_third_block {
+    gap: 40px;
+}
+
+.footer_link {
+    font-size: 16px;
+}
+
+.footer_contract {
+    font-size: 14px;
+}
+
+.footer_year {
+    font-size: 14px;
+}
+
+.footer_powered {
+    font-size: 14px;
+}
+
+.footer_documents_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_documents_left {
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.sidebar {
+
+    width: 280px;
+    height: 100%;
+    background: #3e3e3e;
+    transition: right 0.3s ease;
+    padding: 69px 58px;
+}
+
+.cross {
+    width: 24px;
+    height: 24px;
+
+}
+
+}
+
+
+@media (max-width: 429px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 375px;
+    }
+
+    .hero_title {
+        font-size: 40px;
+    }
+
+    .hero_subtitle {
+        max-width: 228px;
+    }
+
+    .hero_info_img_middle {
+        max-width: 355px;
+    }
+
+    .default_button {
+        padding: 14px 52px;
+    }
+
+
+    #certificates-list {
+        display: grid;
+        grid-template-columns: 192px 153px;
+        grid-template-rows: 69px 69px 69px 69px;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .about_certificate_item:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        height: 139px;
+    }
+    
+    .about_certificate_item:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3 / span 2;
+        height: 139px;
+    }
+    
+    .about_certificate_item:nth-child(5) {
+        grid-column: 1;
+        grid-row: 5 / span 2;
+        height: 139px;
+    }
+    
+    
+    .about_certificate_item:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        height: 213px;
+    }
+    
+    .about_certificate_item:nth-child(4) {
+        grid-column: 2;
+        grid-row: 4 / span 3;
+        height: 213px;
+    }
+    
+    
+    
+    .about_certificate_img {
+        height: 213px;
+    }
+    
+    .about_certificate_img_custom {
+        height: 139px;
+        
+    }
+    
+    .about_certificate_list {
+        row-gap: 4px;
+        column-gap: 10px;
+    }
+
+    .sidebar {
+        width: 227px;
+        padding: 71px 32px;
+    }
+
+
+
+        .companies_image {
+            max-width: 175px;
+            max-height: 90px;
+        }
+    
 }

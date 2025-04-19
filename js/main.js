@@ -10,11 +10,11 @@ const swiper = new Swiper('.companiesSwiper', {
     spaceBetween: 20,
     centeredSlides: false, 
     breakpoints: {
-      320: {
+      375: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      640: {
+      430: {
         slidesPerView: 3,
         spaceBetween: 20
       },
@@ -25,6 +25,10 @@ const swiper = new Swiper('.companiesSwiper', {
 
       1024: {
         slidesPerView: 5,
+        spaceBetween: 20
+      },
+      1440: {
+        slidesPerView: 6,
         spaceBetween: 20
       }
     },
