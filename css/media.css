@@ -57,7 +57,7 @@
     }
 
     .prices_card_descr {
-        max-width: 470px;
+        max-width: 450px;
     }
 
     .prices_card_name {
@@ -65,10 +65,12 @@
         font-size: 28px;
     }
 
-    .prices_card_descr_custom,
+    .prices_card_descr_custom {
+        max-width: 459px;
+    }
+
     .prices_download_link {
-        max-width: 470px;
-        padding-right: 20px;
+        max-width: 300px;
     }
 
     .form_left {
@@ -124,7 +126,7 @@
 
     .footer_third_block {
         flex-direction: column;
-        gap: 56px;
+        gap: 32px;
     }
 
     .footer_title {
@@ -136,8 +138,27 @@
         font-size: 28px;
     }
 
+    .hero_info_list {
+        max-width: 398px;
+        margin-bottom: 56px;
+    }
 
+    .default_button {
+        padding: 16px 97px;
+    }
 
+    .hero_info {
+        background-color: #FFFFFF;
+    }
+
+    .prices_card_custom2 {
+        padding: 60px 16px 60px 15px;
+        background-color: #3E3E3E;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 610px;
+    }
 
 }
 
@@ -188,6 +209,10 @@
         height: 432px;
     }
 
+    .hero_title {
+        margin-bottom: 0;
+    }
+
 
     .about_certificate_img {
         height: 438px;
@@ -222,18 +247,25 @@
 
     .categories_card {
         max-width: 229px;
-        height: 317px;
+        height: 368px;
     }
 
     .bg1,
     .bg2,
     .bg3 {
-        background-position: 0px -50px;
+        background-position: 0px 0px;
     }
 
     .categories_name {
         padding: 20px 18px;
 
+    }
+
+
+
+    .companies_image {
+        max-width: 147px;
+        max-height: 71px;
     }
 
     .prices_card_descr {
@@ -251,8 +283,17 @@
     }
 
     .prices_card {
-        max-width: 362px;
-        padding-right: 10px;
+        padding: 56px 19px 56px 0px;
+        border-bottom: 1px solid #3E3E3E;
+    }
+
+    .prices_card2 {
+        padding-left: 20px;
+    }
+
+
+    .prices_card {
+        max-width: 364px;
     }
 
     .form_title {
@@ -305,6 +346,12 @@
 
     .footer_title {
         font-size: 24px;
+        margin-bottom: 24px;
+
+    }
+
+    .footer_descr{
+        max-width: 400px;
     }
 
     .footer_content {
@@ -420,11 +467,28 @@
         margin-bottom: 128px;
     }
 
-    .footer_logo{
+    .footer_logo {
         width: 230px;
         height: 67px;
     }
 
+    .prices_card_custom2 {
+        padding: 60px 16px 60px 15px;
+        max-width: 364px;
+    }
+
+    .prices_download_link {
+        max-width: 296px;
+    }
+
+    .about_clients_wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .about_clients_list {
+        gap: 8px;
+    }
 
 }
 
@@ -436,7 +500,12 @@
         max-width: 430px;
     }
 
-    .header_logo{
+    .header_top{
+        gap: 10px;
+    }
+
+
+    .header_logo {
         width: 127px;
         height: 37px;
     }
@@ -454,7 +523,8 @@
         font-size: 16px;
     }
 
-    .telegram, .whatsapp{
+    .telegram,
+    .whatsapp {
         width: 32px;
         height: 32px;
     }
@@ -483,6 +553,15 @@
         background-image: none;
         flex-direction: column-reverse;
         padding: 48px 0;
+        background-color: #3E3E3E;
+    }
+
+    .hero_info {
+        background-color: #3E3E3E;
+    }
+
+    .hero_info_list {
+        max-width: 410px;
     }
 
     .hero_info_middle {
@@ -504,13 +583,20 @@
     }
 
     .default_button {
-        padding: 14px 81px;
+        padding: 14px 123px;
         font-size: 16px;
     }
 
     .section_title {
-        max-width: 280px;
+        max-width: 396px;
     }
+
+    .companies {
+        padding: 48px 0;
+        overflow: hidden;
+    }
+
+  
 
     .name_title {
         margin-bottom: 48px;
@@ -542,11 +628,11 @@
         font-size: 16px;
     }
 
-    .categories_arrow{
+    .categories_arrow {
         width: 183px;
     }
 
-    .name_title_custom{
+    .name_title_custom {
         margin-bottom: 0;
     }
 
@@ -555,295 +641,329 @@
 
     }
 
-    
-
-.companies_image {
-    max-width: 130px;
-    max-height: 63px;
-}
-
-
-.title_prices_custom {
-    margin: 0;
-}
-
-.prices_content {
-    flex-direction: column;
-}
-
-.prices_card {
-    max-width: 100%;
-    padding: 16px 0;
-}
-
-.prices_card_custom {
-    border-right: none;
-}
-.prices_card_name {
-    margin-bottom: 8px;
-    font-size: 20px;
-}
-
-.prices_card_descr {
-    font-size: 16px;
-}
-
-.prices {
-    margin-top: 48px;
-}
-
-.prices_card_descr_custom, .prices_download_link {
-    max-width: 100%;
-    font-size: 16px;
-}
-
-.prices_card_custom2 {
-    padding-left: 10px;
-    gap: 16px;
-}
-
-.prices_card:nth-child(1) { order: 1; } /* Диагностика */
-.prices_card:nth-child(2) { order: 2; } /* Монтаж */
-.prices_card:nth-child(3) { order: 3; } /* Сервисное обслуживание */
-.prices_card:nth-child(4) { order: 4; } /* Заправка фреоном */
-.prices_card:nth-child(5) { order: 6; } /* Карточка без h3 (перемещаем в конец) */
-.prices_card:nth-child(6) { order: 5; } /* Ремонт */
-
-.form_content {
-    padding: 48px 0 ;
-}
-
-.form_descr {
-    margin-bottom: 24px;
-    font-size: 16px;
-
-}
-.form_title {
-    margin-bottom: 24px;
-}
-
-.contacts__inp {
-    background-color: #3E3E3E;
-    padding: 14px 10px;
-    outline: 1px solid #FFFFFF;
-    color: #FFFFFF;
-    font-size: 16px;
-}
-
-.form_field {
-    gap: 8px;
-    margin-bottom: 6px;
-}
-
-.custom_checkbox_text {
-    margin-bottom: 6px;
-    font-size: 12px;
-}
-
-.custom_checkbox_text::before {
-    right: 300px;
-}
-
-.custom_checkbox_text::after {
-    right: 303px;
-}
-
-.about_title {
-    font-size: 20px;
-}
-
-.about_descr {
-    font-size: 16px;
-    margin-bottom: 24px;
-}
-
-.about_item_name {
-    font-size: 20px;
-}
-
-.about_item_descr {
-    font-size: 16px;
-    max-width: 258px;
-}
-
-.about_info_wrapper {
-    padding: 48px 10px;
-}
-
-.about_info_item {
-    font-size: 16px;
-}
-
-.about_info_item_custom {
-    font-size: 16px;
-}
-
-.about_info_list li::before {
-    top: 4px;
-}
-
-.about_certificate {
-    padding: 48px 0 ;
-    margin-bottom: 48px;
-}
-
-
-/* **************************** */
-
-#certificates-list {
-    display: grid;
-    grid-template-columns: 223px 177px;
-    /* Фиксированные ширины */
-    grid-template-rows: 81px 81px 81px 81px;
-    /* 4 строки по 144px (половина от 288px) */
-    justify-content: center;
-    align-items: start;
-}
-
-.about_certificate_item:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    height: 162px;
-}
-
-.about_certificate_item:nth-child(3) {
-    grid-column: 1;
-    grid-row: 3 / span 2;
-    height: 162px;
-}
-
-.about_certificate_item:nth-child(5) {
-    grid-column: 1;
-    grid-row: 5 / span 2;
-    height: 162px;
-}
-
-
-.about_certificate_item:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-    height: 247px;
-}
-
-.about_certificate_item:nth-child(4) {
-    grid-column: 2;
-    grid-row: 4 / span 3;
-    height: 247px;
-}
-
-
-
-.about_certificate_img {
-    height: 247px;
-}
-
-.about_certificate_img_custom {
-    height: 162px;
-    
-}
-
-.about_certificate_list {
-    row-gap: 4px;
-    column-gap: 10px;
-}
-
-.about_certificate_title {
-    font-size: 20px;
-    margin-bottom: 24px;
-}
-
-.about_clients_item {
-    font-size: 16px;
-}
-
-.about_clients_wrapper {
-    flex-direction: column;
-    gap: 8px;
-}
-
-.about_clients_list {
-    gap: 8px;
-}
-
-.footer_logo{
-    width: 170px;
-    height: 50px;
-}
-
-.footer {
-    padding: 48px 0 ;
-}
-
-.footer_first {
-    margin-bottom: 48px;
-}
-
-.header_nav_link {
-    font-size: 16px;
-}
-
-.footer_list {
-    margin-bottom: 48px;
-}
-
-.footer_title {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.footer_descr {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-
-.footer_descr_custom {
-    font-size: 16px;
-}
-.footer_third_block {
-    gap: 40px;
-}
-
-.footer_link {
-    font-size: 16px;
-}
-
-.footer_contract {
-    font-size: 14px;
-}
-
-.footer_year {
-    font-size: 14px;
-}
-
-.footer_powered {
-    font-size: 14px;
-}
-
-.footer_documents_content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_documents_left {
-    align-items: center;
-    margin-bottom: 24px;
-}
-
-.sidebar {
-
-    width: 280px;
-    height: 100%;
-    background: #3e3e3e;
-    transition: right 0.3s ease;
-    padding: 69px 58px;
-}
-
-.cross {
-    width: 24px;
-    height: 24px;
-
-}
+
+
+    .companies_image {
+        max-width: 130px;
+        max-height: 63px;
+    }
+
+
+    .title_prices_custom {
+        margin: 0;
+    }
+
+    .prices_content {
+        flex-direction: column;
+    }
+
+    .prices_card {
+        max-width: 100%;
+        padding: 16px 0;
+    }
+
+    .prices_card_custom {
+        border-right: none;
+    }
+
+    .prices_card_name {
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .prices_card_descr {
+        font-size: 16px;
+    }
+
+    .prices {
+        margin-top: 32px;
+    }
+
+    .prices_card_descr_custom,
+    .prices_download_link {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .prices_card_custom2 {
+        padding: 24px 10px;
+        gap: 16px;
+    }
+
+    .prices_card:nth-child(1) {
+        order: 1;
+    }
+
+    /* Диагностика */
+    .prices_card:nth-child(2) {
+        order: 2;
+    }
+
+    /* Монтаж */
+    .prices_card:nth-child(3) {
+        order: 3;
+    }
+
+    /* Сервисное обслуживание */
+    .prices_card:nth-child(4) {
+        order: 4;
+    }
+
+    /* Заправка фреоном */
+    .prices_card:nth-child(5) {
+        order: 6;
+    }
+
+    /* Карточка без h3 (перемещаем в конец) */
+    .prices_card:nth-child(6) {
+        order: 5;
+    }
+
+    /* Ремонт */
+
+    .form_content {
+        padding: 48px 0;
+    }
+
+    .form_descr {
+        margin-bottom: 24px;
+        font-size: 16px;
+
+    }
+
+    .form_title {
+        margin-bottom: 24px;
+    }
+
+    .contacts__inp {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+
+    .form_field {
+        gap: 8px;
+        margin-bottom: 6px;
+    }
+
+    .custom_checkbox_text {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .custom_checkbox_text::before {
+        right: 300px;
+    }
+
+    .custom_checkbox_text::after {
+        right: 303px;
+    }
+
+    .about_title {
+        font-size: 20px;
+    }
+
+    .about_descr {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .about_item_name {
+        font-size: 20px;
+    }
+
+    .about_item_descr {
+        font-size: 16px;
+        max-width: 258px;
+    }
+
+    .about_info_wrapper {
+        padding: 48px 10px;
+    }
+
+    .about_info_item {
+        font-size: 16px;
+    }
+
+    .about_info_item_custom {
+        font-size: 16px;
+    }
+
+    .about_info_list li::before {
+        top: 4px;
+    }
+
+    .about_certificate {
+        padding: 48px 0;
+        margin-bottom: 48px;
+    }
+
+    .about_info_wrapper{
+        margin-bottom: 48px;
+    }
+
+    .footer_descr {
+        max-width: 340px;
+    }
+
+
+    /* **************************** */
+
+    #certificates-list {
+        display: grid;
+        grid-template-columns: 223px 177px;
+        /* Фиксированные ширины */
+        grid-template-rows: 81px 81px 81px 81px;
+        /* 4 строки по 144px (половина от 288px) */
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about_certificate_item:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        height: 162px;
+    }
+
+    .about_certificate_item:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3 / span 2;
+        height: 162px;
+    }
+
+    .about_certificate_item:nth-child(5) {
+        grid-column: 1;
+        grid-row: 5 / span 2;
+        height: 162px;
+    }
+
+
+    .about_certificate_item:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        height: 247px;
+    }
+
+    .about_certificate_item:nth-child(4) {
+        grid-column: 2;
+        grid-row: 4 / span 3;
+        height: 247px;
+    }
+
+
+
+    .about_certificate_img {
+        height: 247px;
+    }
+
+    .about_certificate_img_custom {
+        height: 162px;
+
+    }
+
+    .about_certificate_list {
+        row-gap: 4px;
+        column-gap: 10px;
+    }
+
+    .about_certificate_title {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .about_clients_item {
+        font-size: 16px;
+    }
+
+    .about_clients_wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .about_clients_list {
+        gap: 8px;
+    }
+
+    .footer_logo {
+        width: 170px;
+        height: 50px;
+    }
+
+    .footer {
+        padding: 48px 0;
+    }
+
+    .footer_first {
+        margin-bottom: 48px;
+    }
+
+    .header_nav_link {
+        font-size: 16px;
+    }
+
+    .footer_list {
+        margin-bottom: 48px;
+    }
+
+    .footer_title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer_descr {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .footer_descr_custom {
+        font-size: 16px;
+    }
+
+    .footer_third_block {
+        gap: 32px;
+    }
+
+    .footer_link {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .footer_contract {
+        font-size: 14px;
+    }
+
+    .footer_year {
+        font-size: 14px;
+    }
+
+    .footer_powered {
+        font-size: 14px;
+    }
+
+    .footer_documents_content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_documents_left {
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .sidebar {
+
+        width: 280px;
+        height: 100%;
+        background: #3e3e3e;
+        transition: right 0.3s ease;
+        padding: 69px 58px;
+    }
+
+    .cross {
+        width: 24px;
+        height: 24px;
+
+    }
 
 }
 
@@ -867,11 +987,9 @@
     .hero_info_img_middle {
         max-width: 355px;
     }
-
     .default_button {
-        padding: 14px 52px;
+        padding: 14px 96px;
     }
-
 
     #certificates-list {
         display: grid;
@@ -880,49 +998,49 @@
         justify-content: center;
         align-items: start;
     }
-    
+
     .about_certificate_item:nth-child(1) {
         grid-column: 1;
         grid-row: 1 / span 2;
         height: 139px;
     }
-    
+
     .about_certificate_item:nth-child(3) {
         grid-column: 1;
         grid-row: 3 / span 2;
         height: 139px;
     }
-    
+
     .about_certificate_item:nth-child(5) {
         grid-column: 1;
         grid-row: 5 / span 2;
         height: 139px;
     }
-    
-    
+
+
     .about_certificate_item:nth-child(2) {
         grid-column: 2;
         grid-row: 1 / span 3;
         height: 213px;
     }
-    
+
     .about_certificate_item:nth-child(4) {
         grid-column: 2;
         grid-row: 4 / span 3;
         height: 213px;
     }
-    
-    
-    
+
+
+
     .about_certificate_img {
         height: 213px;
     }
-    
+
     .about_certificate_img_custom {
         height: 139px;
-        
+
     }
-    
+
     .about_certificate_list {
         row-gap: 4px;
         column-gap: 10px;
@@ -935,9 +1053,20 @@
 
 
 
-        .companies_image {
-            max-width: 175px;
-            max-height: 90px;
-        }
+    .companies_image {
+        max-width: 130px;
+        max-height: 63px;
+    }
+
+    .categories_card {
+        max-width: 100%;
+        height: 481px;
+    }
+
     
+    .prices_download_link {
+        max-width: 263px;
+    }
+
+
 }

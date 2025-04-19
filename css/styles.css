@@ -406,7 +406,7 @@ body {
 	color: #3E3E3E;
 	font-size: 136px;
 	font-weight: 400;
-	line-height: 120%;
+	line-height: 116%;
 	margin-bottom: 10px;
 }
 
@@ -488,7 +488,8 @@ body {
 	color: #3E3E3E;
 	font-size: 40px;
 	font-weight: 400;
-	line-height: 120%;
+	line-height: 116%;
+	margin-bottom: 4px;
 }
 
 .name_title{
@@ -525,7 +526,7 @@ body {
 	height: 536px;
 	outline: 1px solid #3E3E3E;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 }
 
@@ -586,7 +587,7 @@ body {
 
 
 .companies {
-	padding: 40px 0;
+	padding: 56px 0 72px 0;
 	overflow: hidden;
   }
   
@@ -653,7 +654,7 @@ body {
 
   .prices_card_descr{
 	margin: 0;
-	max-width: 589px;
+	max-width: 569px;
 	color: #3E3E3E;
 	font-family: "Montserrat";
 	font-size: 20px;
@@ -662,7 +663,7 @@ body {
   }
 
   .prices_card{
-	padding: 56px 0px 56px 20px;
+	padding: 56px 20px 56px 20px;
 	border-bottom: 1px solid #3E3E3E;
   }
 
@@ -675,10 +676,12 @@ body {
   }
 
   .prices_card_custom2{
+	padding: 60px 56px 60px 58px;
 	background-color: #3E3E3E;
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
+	max-width: 610px;
   }
 
   .prices_download_link{
@@ -736,7 +739,7 @@ body {
 	cursor: pointer;
 	display: flex;
 	flex-direction: row-reverse;
-	margin-bottom: 8px;
+	margin-bottom: 0px;
   }
   
   .custom_checkbox_input {
@@ -828,7 +831,7 @@ body {
 	color: #FFFFFF;
 	font-size: 40px;
 	font-weight: 400;
-	line-height: 120%;
+	line-height: 116%;
   }
 
   .form_descr{
@@ -844,7 +847,7 @@ body {
 
   .contacts__inp{
 	background-color: #3E3E3E;
-	padding: 16px 20px;
+	padding: 14.5px 20px;
 	outline: 1px solid #FFFFFF;
 	color: #FFFFFF;
 	font-size: 20px;
@@ -860,13 +863,14 @@ body {
   }
 
   .default_button{
-	padding: 16px 43px;
+	padding: 16px 94px;
 	background-color: #FFFFFF;
 	color: #3E3E3E;
 	font-family: "Montserrat";
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 120%;
+	text-transform: uppercase;
   }
 
   .form_btn{
@@ -938,7 +942,7 @@ body {
 .about_info_wrapper{
 	display: flex;
 	gap: 19px;
-	margin-bottom: 56px;
+	margin-bottom: 72px;
 }
 
 .about_info_left{
@@ -982,15 +986,15 @@ body {
 	content: '';
 	position: absolute;
 	left: -17px;
-	top: 3px; /* регулирует вертикальное положение */
-	width: 10px;   /* ширина точки */
-	height: 10px;  /* высота точки */
-	background-color: #5E95AF; /* цвет точки */
-	border-radius: 50%; /* делает её круглой */
+	top: 7px; 
+	width: 10px;   
+	height: 10px; 
+	background-color: #5E95AF; 
+	border-radius: 50%; 
   }
 
   .about_certificate{
-	padding: 56px 0 56px 0;
+	padding: 56px 0 72px 0;
 	border-bottom: 1px solid #3E3E3E;
 	border-top: 1px solid #3E3E3E;
 	margin-bottom: 56px;
@@ -1038,6 +1042,7 @@ body {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 120%;
+	text-transform: uppercase;
   }
 
   /* footer */
@@ -1049,7 +1054,7 @@ body {
 
   .footer{
 	background-color: #3E3E3E;
-	padding: 64px 0 64px 0;
+	padding: 56px 0 56px 0;
   }
 
   .footer_list{

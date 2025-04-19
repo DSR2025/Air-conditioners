@@ -11,7 +11,7 @@ const swiper = new Swiper('.companiesSwiper', {
     centeredSlides: false, 
     breakpoints: {
       375: {
-        slidesPerView: 2,
+        slidesPerView: 2.7,
         spaceBetween: 20
       },
       430: {
@@ -19,12 +19,16 @@ const swiper = new Swiper('.companiesSwiper', {
         spaceBetween: 20
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 4.7,
         spaceBetween: 20
       },
 
       1024: {
         slidesPerView: 5,
+        spaceBetween: 20
+      },
+      1280: {
+        slidesPerView: 6,
         spaceBetween: 20
       },
       1440: {
